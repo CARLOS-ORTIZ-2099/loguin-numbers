@@ -1,0 +1,84 @@
+body{
+   /*  border: solid red 2px; */
+    min-height: 100vh;
+   
+}
+.main{
+    /* border: solid orange 2px; */
+}
+
+.div-container {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(70px, 1fr));
+    gap: .2rem;
+ /*    border: solid green 3px; */
+    margin: 0 auto;
+    
+}
+
+.div-container .button-child {
+    height: 60px;
+    cursor: pointer;
+    background-color: rgb(51, 127, 198);
+    color: aliceblue;
+    
+}
+.button-child:hover{
+    font-weight: bolder;
+    color: blue;
+}
+
+.send-data {
+    display: block;
+    margin: 20px auto;
+    padding: .5rem;
+    font-weight: bold;
+    transition: background-color .5s ease-in-out;
+   
+}
+
+.send-data:hover {
+    background-color: rgb(69, 93, 229);
+    transition:  all .5s ease-in-out;
+    color: aliceblue;
+
+}
+
+.delete-button{
+    transition: background-color .5s ease-in-out ;
+}
+
+.delete-button:hover {
+    background-color: tomato;
+    color: aliceblue;
+    font-weight: bold;
+    transition: all .5s ease-in-out;
+}
+
+
+
+/*  media querys */
+@media screen and (min-width : 700px) {
+    .div-container {
+     /*    background-color: red; */
+        width: 50%;
+    }
+
+    .div-container .button-child {
+        height: 70px;
+        
+    }
+}
+
+@media screen and (min-width : 900px) {
+    .div-container {
+       /*  background-color: red; */
+        width: 40%;
+    }
+
+
+    .div-container .button-child {
+        height: 70px;
+        
+    }
+}
